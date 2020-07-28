@@ -1,0 +1,9 @@
+list.indexof('elemento') - pesquisa a posição um determinado elemento da lista
+caso um elemento nao existe é retornado -1
+
+list.join - modifica o elemento separador
+list.pop - remove o ultimo elemento de uma lista
+list.shift - retira o primeiro elemento de uma lista
+
+list[posição] = 'um valor' - voce edita a posição desejada
+list.push - adiciona um valor na lista

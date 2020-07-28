@@ -1,0 +1,7 @@
+var, let  e const
+
+let pode usar somente desntro do contexto q é utilizado
+
+let deve ser usado quando vc quer proteger uma variavel em seu contexto
+
+const variaveis com nomes definidos e imutavel

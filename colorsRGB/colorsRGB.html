@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="../imagenes/js.ico" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./colorsRGB.js"></script>
+    <script type="text/javascript" src="../js/menu.js"></script>
+    <link href="./colorsRGB.css" rel="stylesheet" type="text/css" />
+    <title>Convertidor RGB a HEX</title>
+</head>
+<body>
+
+    <div id="menu"></div>
+
+    <div class="jumbotron text-center">
+      <h2><b>Tulio H. - Lecciones de JavaScript - RGB</b></h2>
+    </div>
+    <div id="container" >
+        <table>
+            <tr>
+              <th>Azul</th>
+              <th>Rojo</th>
+              <th>Verde</th>
+            </tr>
+            <tr>
+                <td><input type="range" min="0" max="255" value="255" id="b" onchange="changeRange()"></td>
+                <td><input type="range" min="0" max="255" value="255" id="r" onchange="changeRange()"></td>
+                <td><input type="range" min="0" max="255" value="255" id="g" onchange="changeRange()"></td>
+            </tr>
+            <tr>
+              
+                <td id="b-label">255</td>
+                <td id="r-label">255</td> 
+                <td id="g-label">255</td>
+            </tr>
+        </table>
+        <div class="contaniner text-center">
+          <h1 id="hex-label">#ffffff</h1>
+        </div>
+    </div>
+</body>
+</html>

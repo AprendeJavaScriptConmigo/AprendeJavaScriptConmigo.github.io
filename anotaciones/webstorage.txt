@@ -1,0 +1,14 @@
+web storage
+localstorage
+sessionstorage
+
+localStorage.setItem("key","value");
+
+
+localStorage.getItem("key");
+
+localStorage.removeItem("");
+
+localStorage.nome = "Matheus";
+
+adicionar como exercicios botoes que buscam e excluem do localstorage

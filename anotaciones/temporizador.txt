@@ -1,0 +1,10 @@
+function acao(){
+	document.write("Executando ...<>/br;");
+}
+
+//Execute do tempo em tempo
+var timer = setInterval(acao,10000);
+
+clearInterval(timer); // Caso queira parar o intervalo, pode ser usado em botao por exemplo
+
+//setTimeout(acao, 3000)

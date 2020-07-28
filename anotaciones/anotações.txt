@@ -1,0 +1,4 @@
+comando prompt para colher infos no proprio javascript
+
+//para escrever html usando js
+document.write("codigos de html")

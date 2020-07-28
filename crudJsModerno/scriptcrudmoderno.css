@@ -1,0 +1,40 @@
+.nuevaclase{
+    font-weight: bolder;
+    color: brown;
+}
+
+.deletebutton{
+    color: white;
+    font-weight: bold;
+    background-color: darkred;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.clickable{
+    cursor: pointer;
+}
+
+.vertical-menu {
+    width: 200px;
+  }
+
+  .vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+  }
+
+  .vertical-menu a:hover {
+    background-color: #ccc;
+  }
+
+  .vertical-menu a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  .navbar{
+    margin-bottom: 0px;
+  }

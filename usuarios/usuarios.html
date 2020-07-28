@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Lecciones de JavaScript</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="shortcut icon" href="../imagenes/js.ico" type="image/x-icon" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/menu.js"></script>
+  <script type="text/javascript" src="./usuarios.js"></script>
+  <link rel="stylesheet" href="usuarios.css" type="text/css" />
+</head>
+<body>
+  
+  <div id="menu"></div>
+
+  <div class="jumbotron text-center">
+    <h1>Búsqueda de usuarios</h1>
+    <p>Tulio H. - Aprende JavaScript Conmigo</p> 
+  </div>
+  
+  <div id="loading">
+    <div class="preloader-wrapper active">
+      <div class="spinner-layer spinner-blue-only">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+    <center>
+      <span id="loading-message">
+        <h4>Espere...</h4>
+      </span>
+    </center>
+  </div>
+  
+  <div class="container">
+    <div class="field-search">
+      <div class="input-field col s6">
+        <input id="inputName" type="text" class="form-control" >
+        <label for="inputName"></label>
+      </div>
+      <a class="btn btn-warning" id="buttonSeach">Buscar</a>
+    </div>
+
+    <div class="users-container">
+      <div class="container border-conteiner" >
+        <h3 id="summaryUsers">Sin usuarios filtrados</h5>
+        <div id="tabUsers"></div>
+      </div>
+      <div class="container border-conteiner">
+        <h3 id="summaryEstatistic">Nada que mostrar</h5>
+        <div id="tabEstatistic"></div>
+      </div>
+    </div>
+  </div>
+  </br>
+
+</body>
+</html>
