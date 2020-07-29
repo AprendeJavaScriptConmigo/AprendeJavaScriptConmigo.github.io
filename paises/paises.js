@@ -43,11 +43,10 @@
             id: numericCode,
             name: translations.pt,
             population,
+            formattedPopulation: formatNumber(population),
             flag
         };
     });
-
-
 
     render();
  }
@@ -63,7 +62,7 @@
      let countriesHTML = "</br><div>";
 
      allCountries.forEach(country => {
-         const { name, flag, id, population} = country;
+         const { name, flag, id, population, formattedPopulation } = country;
 
          const countryHTML = `
             <div class="container-fluid">
@@ -75,7 +74,7 @@
                 </div>
                 <div class="col-sm-6"> 
                     <p>${name}</p>
-                    <p>${population}</p>
+                    <p>${formattedPopulation}</p>
                 </div>
             </div>
          </div>
@@ -92,7 +91,7 @@
     let favoritesHTML = "</br><div>";
 
     favoriteCountries.forEach(country => {
-        const { name, flag, id, population} = country;
+        const { name, flag, id, population , formattedPopulation} = country;
 
         const favoritecountryHTML = `
            <div class="container-fluid">
@@ -104,7 +103,7 @@
                </div>
                <div class="col-sm-6"> 
                    <p>${name}</p>
-                   <p>${population}</p>
+                   <p>${formattedPopulation}</p>
                </div>
            </div>
         </div>
@@ -131,13 +130,13 @@
         return accumulator + current.population;
     }, 0);
 
-    totalPopulationList.textContent = totalPopulation;
-    totalPopulationFavorites.textContent = totalFavorites;
+    totalPopulationList.textContent = formatNumber(totalPopulation);
+    totalPopulationFavorites.textContent = formatNumber(totalFavorites);
  }
 
  function handlerCountryButtons() {
-    const countryButtons = Array.from(tabCountries.querySelectorAll('.btn'));
-    const favoriteButtons = Array.from(tabCountries.querySelectorAll('.btn'));
+    const countryButtons = Array.from(tabCountries.querySelectorAll('.btn-success'));
+    const favoriteButtons = Array.from(tabFavorites.querySelectorAll('.btn-danger'));
 
     countryButtons.forEach(button => {
         button.addEventListener('click', () => addToFavorites(button.id));
@@ -172,6 +171,9 @@ function removeFromFavorites(id) {
     });
 
     favoriteCountries = favoriteCountries.filter(country => country.id !== id);
-
     render();
  }
+
+ function formatNumber(number){
+    return numberFormat.format(number);
+  }

@@ -38,3 +38,8 @@ img {
 .navbar{
   margin-bottom: 0px;
 }
+
+.img-users{
+  border-radius: 50%;
+  margin-bottom: 10px;
+}

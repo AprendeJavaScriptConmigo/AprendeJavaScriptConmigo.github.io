@@ -111,7 +111,7 @@ function filterUsers(searchName) {
       const { name, picture, age } = user;
       const userHMTL = `<div class="user">
                           <div>
-                            <img src="${picture}" alt="${name} style="border-radius: 50%;"/>
+                            <img class="img-users" src="${picture}" alt="${name}" />
                           </div>
                           <div>
                             ${name} , ${age} anos
@@ -120,7 +120,7 @@ function filterUsers(searchName) {
                         `;
                           usersHTML += userHMTL;
                         }, 0);
-  console.log(totalUsersFilter);
+
   usersHTML += '</div>';
   tabUsers.innerHTML = usersHTML;
 
